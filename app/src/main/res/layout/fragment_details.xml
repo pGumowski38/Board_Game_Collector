@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsFragment">
+
+    <TextView
+        android:id="@+id/detTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Kawerna"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <ImageView
+        android:id="@+id/detImage"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        tools:src="@tools:sample/avatars" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <ScrollView
+        android:id="@+id/detScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="253dp"
+        android:visibility="visible">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0009A2">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detOriginalTitleText"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Original Title" />
+
+                <TextView
+                    android:id="@+id/detOriginalTitle"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Kawerna" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detPublishYearText"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Publish Year" />
+
+                <TextView
+                    android:id="@+id/detPublishYear"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2018" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detAuthorsText"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Authors" />
+
+                <TextView
+                    android:id="@+id/detAuthors"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Asterix, Obelix, Panoramix, Numernabis" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detGraphicAuthorsText"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Graphic Authors" />
+
+                <TextView
+                    android:id="@+id/detGraphicAuthors"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Cesaar, Idefix, Cleopatra, Artemix" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detDescriptionText"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Description" />
+
+                <TextView
+                    android:id="@+id/detDescription"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Niesamowicie wciągająca gra dla całej rodziny" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detBaseDLCText"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Base/DLC" />
+
+                <TextView
+                    android:id="@+id/detBaseDLC"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Base" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detBGGRankText"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Rank in BGG" />
+
+                <TextView
+                    android:id="@+id/detBGGRank"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="5" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detBGGIDText"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ID in BGG" />
+
+                <TextView
+                    android:id="@+id/detBGGID"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="120320" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detCommentText"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Comment" />
+
+                <TextView
+                    android:id="@+id/detComment"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Całkiem spoko" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detLocalizationText"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Localization" />
+
+                <TextView
+                    android:id="@+id/detLocalization"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Na Strychu na półce z grami planszowymi" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detOrderDateText"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Order Date" />
+
+                <TextView
+                    android:id="@+id/detOrderDate"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="03/06/2020" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detOwnDateText"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Own Date" />
+
+                <TextView
+                    android:id="@+id/detOwnDate"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="10/06/2020" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detCostText"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Cost" />
+
+                <TextView
+                    android:id="@+id/detCost"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="20 $" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detRecommendedPriceText"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Recommended Price" />
+
+                <TextView
+                    android:id="@+id/detRecommendedPrice"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="25 $" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detEANUPCText"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="EAN / UPC" />
+
+                <TextView
+                    android:id="@+id/detEANUPC"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1203042" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detProductionCodeText"
+                    android:layout_width="260dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Production Code" />
+
+                <TextView
+                    android:id="@+id/detProductionCode"
+                    android:layout_width="320dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="EMCP10223" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/detScrollViewEdit"
+        android:layout_width="match_parent"
+        android:layout_height="253dp"
+        android:visibility="gone">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detOriginalTitleText2"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Original Title" />
+
+                <EditText
+                    android:id="@+id/detOriginalTitleEdit"
+                    android:layout_width="254dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detPublishYearText2"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Publish Year" />
+
+                <EditText
+                    android:id="@+id/detPublishYearEdit"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detAuthorsText2"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Authors" />
+
+                <EditText
+                    android:id="@+id/detAuthorsEdit"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detGraphicAuthorsText2"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Graphics" />
+
+                <EditText
+                    android:id="@+id/detGraphicAuthorsEdit"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detDescriptionText2"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Description" />
+
+                <EditText
+                    android:id="@+id/detDescriptionEdit"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detBaseDLCText2"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Base or DLC" />
+
+                <EditText
+                    android:id="@+id/detBaseDLCEdit"
+                    android:layout_width="177dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detCommentText2"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Comment" />
+
+                <EditText
+                    android:id="@+id/detCommentEdit"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detLocalizationText2"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Localization" />
+
+                <EditText
+                    android:id="@+id/detLocalizationEdit"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detOrderDateText2"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Order Date" />
+
+                <EditText
+                    android:id="@+id/detOrderDateEdit"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detOwnDateText2"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Own Date" />
+
+                <EditText
+                    android:id="@+id/detOwnDateEdit"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detCostText2"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Cost" />
+
+                <EditText
+                    android:id="@+id/detCostEdit"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detRecommendedPriceText2"
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Recommended Price" />
+
+                <EditText
+                    android:id="@+id/detRecommendedPriceEdit"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detEANUPCText2"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="EAN/UPC Code" />
+
+                <EditText
+                    android:id="@+id/detEANUPCEdit"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/detProductionCodeText2"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Production Code" />
+
+                <EditText
+                    android:id="@+id/detProductionCodeEdit"
+                    android:layout_width="247dp"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="null" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/detGoBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Back" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/detEditGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#7BAF2E"
+            android:text="Edit Game" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/detDeleteGameButton"
+            android:layout_width="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#C50101"
+            android:text="Delete Game" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

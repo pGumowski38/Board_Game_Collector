@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.ubi.boardgamecollector.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.ubi.boardgamecollector.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_addGameFragment"
+            app:destination="@id/addGameFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_findGameManagerFragment"
+            app:destination="@id/findGameManagerFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_OPCollectionManagerFragment"
+            app:destination="@id/OPCollectionManagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BGG_FindGameFragment"
+        android:name="com.ubi.boardgamecollector.BGG_FindGameFragment"
+        android:label="fragment_b_g_g__find_game"
+        tools:layout="@layout/fragment_b_g_g__find_game" />
+    <fragment
+        android:id="@+id/addGameFragment"
+        android:name="com.ubi.boardgamecollector.AddGameFragment"
+        android:label="fragment_add_game"
+        tools:layout="@layout/fragment_add_game" >
+        <action
+            android:id="@+id/action_addGameFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameDetailsFragment"
+        android:name="com.ubi.boardgamecollector.GameDetailsFragment"
+        android:label="fragment_game_details"
+        tools:layout="@layout/fragment_game_details" >
+        <argument
+            android:name="gameID"
+            app:argType="long" />
+        <argument
+            android:name="gameTitle"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.ubi.boardgamecollector.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <argument
+            android:name="gameID"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/OPCollectionFragment"
+        android:name="com.ubi.boardgamecollector.OPCollectionFragment"
+        android:label="fragment_o_p_collection"
+        tools:layout="@layout/fragment_o_p_collection" />
+    <fragment
+        android:id="@+id/findGameManagerFragment"
+        android:name="com.ubi.boardgamecollector.FindGameManagerFragment"
+        android:label="fragment_find_game_manager"
+        tools:layout="@layout/fragment_find_game_manager" >
+        <action
+            android:id="@+id/action_findGameManagerFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OPCollectionManagerFragment"
+        android:name="com.ubi.boardgamecollector.OPCollectionManagerFragment"
+        android:label="fragment_o_p_collection_manager"
+        tools:layout="@layout/fragment_o_p_collection_manager" >
+        <action
+            android:id="@+id/action_OPCollectionManagerFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+</navigation>
